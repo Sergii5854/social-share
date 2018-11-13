@@ -27,3 +27,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Look for link 
+See [Click me]( https://sergii5854.github.io/social-share/).
