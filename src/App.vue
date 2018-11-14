@@ -1,10 +1,6 @@
 <template>
     <div id="app">
         <Hero msg="Welcome to Your Vue.js App"/>
-        <img alt="Vue logo" src="./assets/logo.png">
-        <HelloWorld msg="Welcome to Your Vue.js App"/>
-
-
     </div>
 </template>
 
@@ -23,8 +19,7 @@
     export default {
         name: 'app',
         components: {
-            Hero,
-            HelloWorld
+            Hero
         }
     }
 </script>

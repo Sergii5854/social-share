@@ -1,37 +1,58 @@
 <template>
     <div>
-        <b-button @click="modalShow = !modalShow">
-            Share
+        <b-button @click="showModal" variant="default">
+            <img alt="share" class="share" src="./../assets/share.svg">
         </b-button>
+        <b-modal ref="myModalRef"
+                 hide-footer
+                 hide-header
+                 size="sm"
+                 centered
+        >
 
-        <b-modal v-model="modalShow">
-            Hello From Modal!
-            <hr>
-            <label>
-                <Facebook url="https://www.airbnb.com.mt/rooms/plus/20934793?"
-                          scale="2"/>
-                Facebook
-            </label>
-            <hr>
-            <label>
-                <WhatsApp url="https://www.airbnb.com.mt/rooms/plus/20934793?"
-                          scale="2"/>
-                WhatsApp
-            </label>
-            <hr>
-            <label>
-                <Email title="test"
-                        url="https://www.airbnb.com.mt/rooms/plus/20934793?"
-                       scale="2"/>
-                Email
-            </label>
+            <div class="d-block   ">
+                <div class="text-left">
+                    <h1 class="title">Share</h1>
+                    <div class="description">
+                        Check out this awesome listing on Airbnb: Visit Microbreweries from a Colorful Bungalow in North Park - Bungalows for Rent in San Diego
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="share-label-wrap text-left">
+
+                    <Facebook url="https://www.airbnb.com.mt/rooms/plus/20934793?"
+                              name="Facebook"
+                              scale="2"
+                              />
+
+                    <hr>
+
+                    <WhatsApp
+                            name="WhatsApp"
+                            url="https://www.airbnb.com.mt/rooms/plus/20934793?"
+                            scale="2"/>
+
+                    <hr>
+
+                    <Email
+                            name="Email"
+                            title="test"
+                            url="https://www.airbnb.com.mt/rooms/plus/20934793?"
+                            scale="2"/>
+
+                    <br>
+                    <br>
+                </div>
+            </div>
+
         </b-modal>
     </div>
 </template>
 
 <script>
     import Vue from 'vue'
-
+    import Icon from 'vue-awesome/components/Icon';
     import Facebook from './sharelinks/Facebook.vue';
     import WhatsApp from './sharelinks/Whatsapp.vue';
     import Email from './sharelinks/Email.vue';
@@ -42,16 +63,57 @@
             Facebook,
             Email
         },
-        data() {
-            return {
-
-                custom: {
-                    url: "https://mycustomdomain.com",
-                    scale: "2"
-                },
-
-                modalShow: false
+        methods: {
+            showModal() {
+                this.$refs.myModalRef.show()
+            },
+            hideModal() {
+                this.$refs.myModalRef.hide()
             }
         }
     }
 </script>
+
+<style scoped>
+    .share {
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+
+    .title {
+
+        color: rgb(72, 72, 72);
+        display: block;
+        font-family: Circular, -apple-system, system-ui, Roboto, "Helvetica Neue", sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        height: 30px;
+        letter-spacing: normal;
+        line-height: 30px;
+        overflow-wrap: break-word;
+
+        text-rendering: optimizelegibility;
+        text-size-adjust: 100%;
+        width: 328px;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    }
+
+    .description {
+        color: rgb(72, 72, 72);
+        display: block;
+        font-family: Circular, -apple-system, system-ui, Roboto, "Helvetica Neue", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        height: 54px;
+        letter-spacing: normal;
+        line-height: 18px;
+    }
+
+    .share-label-wrap {
+        text-align: left;
+    }
+
+
+</style>

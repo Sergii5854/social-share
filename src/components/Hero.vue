@@ -1,13 +1,25 @@
-
 <template>
     <div class="hero container">
-        <div class="row">
-            <div class="col-sm-6">
+        <div class="row ">
+            <div class="col-sm-5 description-block text-left">
+                <br>
                 <h1>Share Link </h1>
-                <Modal />
+                <br>
+                <small class="slogan">ENTIRE BUNGALOW IN SAN DIEGO</small>
+                <br>
+                <br>
+                <br>
+                <p class="description">Visit Microbreweries from a Colorful Bungalow in North Park</p>
+
             </div>
-            <div class="col-sm-6">
-                <img src="./../assets/room.jpg" alt="room">
+            <div class="col-sm-7">
+                <div class="img-wrap">
+                    <div class="share-block">
+                        <Modal/>
+
+                    </div>
+                    <img src="./../assets/room.jpg" alt="room">
+                </div>
             </div>
         </div>
     </div>
@@ -29,23 +41,49 @@
     }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
-    h3 {
-        margin: 40px 0 0;
+    .slogan {
+        color: rgb(118, 118, 118);
+        display: inline;
+        font-family: Circular, -apple-system, system-ui, Roboto, "Helvetica Neue", sans-serif;
+        font-size: 12px;
+        font-weight: 800;
+        height: auto;
+        letter-spacing: 1px;
+        line-height: 16px;
     }
 
-    ul {
-        list-style-type: none;
-        padding: 0;
+    .description-block {
+        background: #f5f5f5;
+        height: auto;
     }
 
-    li {
-        display: inline-block;
-        margin: 0 10px;
+    .description {
+        font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-seri;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 34px;
+        max-height: 204px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
     }
 
-    a {
-        color: #42b983;
+    .img-wrap {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .share-block {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 10px;
+
     }
 </style>
