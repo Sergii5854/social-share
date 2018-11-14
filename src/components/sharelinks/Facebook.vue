@@ -16,15 +16,14 @@
     },
     methods: {
         facebookLink(url) {
-            let popup;
             let shareUrl = `https://www.facebook.com/sharer/sharer.php` +
                 objectToGetParams({
                     u: url
                 });
-//            window.open(shareUrl, '_self');
+//            window.open(shareUrl, '_self')
 
 
-            PopupCenter(shareUrl, 500,500)
+            PopupCenter(shareUrl, 'title', 500,500)
 
         }
     },
