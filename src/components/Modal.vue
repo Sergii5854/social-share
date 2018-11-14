@@ -20,7 +20,8 @@
             </label>
             <hr>
             <label>
-                <Email url="https://www.airbnb.com.mt/rooms/plus/20934793?"
+                <Email title="test"
+                        url="https://www.airbnb.com.mt/rooms/plus/20934793?"
                        scale="2"/>
                 Email
             </label>
@@ -31,7 +32,9 @@
 <script>
     import Vue from 'vue'
 
-    import {Facebook, Email, WhatsApp} from 'vue-socialmedia-share';
+    import Facebook from './sharelinks/Facebook.vue';
+    import WhatsApp from './sharelinks/Whatsapp.vue';
+    import Email from './sharelinks/Email.vue';
 
     export default {
         components: {
