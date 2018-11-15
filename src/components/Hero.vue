@@ -1,7 +1,7 @@
 <template>
     <div class="hero container">
         <div class="row ">
-            <div class="col-sm-5 description-block text-left">
+            <div class="col-md-5 description-block text-left order-2 order-md-1">
                 <br>
                 <h1>Share Link </h1>
                 <br>
@@ -12,7 +12,7 @@
                 <p class="description">Visit Microbreweries from a Colorful Bungalow in North Park</p>
 
             </div>
-            <div class="col-sm-7">
+            <div class="col-md-7  order-1 order-md-2">
                 <div class="img-wrap">
                     <div class="share-block">
                         <Modal/>
@@ -78,12 +78,19 @@
         width: 100%;
         height: auto;
     }
+    .img-wrap img{
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
 
     .share-block {
         display: block;
         position: absolute;
         top: 30px;
-        right: 10px;
+        right: 20px;
+        z-index: 1;
 
     }
 </style>

@@ -6,6 +6,11 @@
     <icon name="envelope-square" :scale="scale" color="#ff4343"></icon>
     {{name}}
   </label>
+    <form action="https://airform.io/bondarenko.sergii.i@gmail.com" method="post">
+  <input type="text" name="name" placeholder="Enter your name">
+  <textarea name="message" placeholder="Enter your message"></textarea>
+  <button>Send</button>
+</form>
     </span>
 </template>
 
@@ -19,12 +24,13 @@
         methods: {
             emailLink(url, {subject, body}) {
 
-                    let shareUrl =   'mailto:' +
-                    objectToGetParams({
-                        subject,
-                        body: body || url
-                    })
-                PopupCenter(shareUrl, 'title', 500, 500)
+//                    let shareUrl =   'mailto:' +
+//                    objectToGetParams({
+//                        subject,
+//                        body: body || url
+//                    })
+//                PopupCenter(shareUrl, 'title', 500, 500)
+
             }
         },
         props: {
