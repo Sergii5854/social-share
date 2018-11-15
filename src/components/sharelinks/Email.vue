@@ -6,11 +6,6 @@
     <icon name="envelope-square" :scale="scale" color="#ff4343"></icon>
     {{name}}
   </label>
-    <form action="https://airform.io/bondarenko.sergii.i@gmail.com" method="post">
-  <input type="text" name="name" placeholder="Enter your name">
-  <textarea name="message" placeholder="Enter your message"></textarea>
-  <button>Send</button>
-</form>
     </span>
 </template>
 
@@ -19,16 +14,17 @@
     import 'vue-awesome/icons/envelope-square';
     import Icon from 'vue-awesome/components/Icon';
     import PopupCenter from '../../utils/PopupCenter';
+
     export default {
         name: 'email',
         methods: {
             emailLink(url, {subject, body}) {
 
-//                    let shareUrl =   'mailto:' +
-//                    objectToGetParams({
-//                        subject,
-//                        body: body || url
-//                    })
+                let shareUrl = 'mailto:' +
+                    objectToGetParams({
+                        subject,
+                        body: body || url
+                    })
 //                PopupCenter(shareUrl, 'title', 500, 500)
 
             }
@@ -61,21 +57,23 @@
     };
 </script>
 <style scoped>
-  label {
-    color: rgb(166, 29, 85);
+    label {
+        color: rgb(166, 29, 85);
 
-    cursor: pointer;
-    text-align: left;
+        cursor: pointer;
+        text-align: left;
 
-    font-family: Circular, -apple-system, system-ui, Roboto, "Helvetica Neue", sans-serif;
-    font-size: 16px;
-    transition: 3s;
-  }
-  span svg{
-    margin: -5px 5px 0 0;
-  }
-  label:hover {
-    text-decoration: underline;
-  }
+        font-family: Circular, -apple-system, system-ui, Roboto, "Helvetica Neue", sans-serif;
+        font-size: 16px;
+        transition: 3s;
+    }
+
+    span svg {
+        margin: -5px 5px 0 0;
+    }
+
+    label:hover {
+        text-decoration: underline;
+    }
 
 </style>
