@@ -38,6 +38,7 @@
                     <Email
                             name="Email"
                             title="test"
+                            subject="Share Link "
                             url="https://www.airbnb.com.mt/rooms/plus/20934793?"
                             scale="2"/>
 

@@ -18,15 +18,25 @@
     export default {
         name: 'email',
         methods: {
-            emailLink(url, {subject, body}) {
-
-                let shareUrl = 'mailto:' +
+//            emailLink(url, {subject, body}) {
+//
+//                let shareUrl = 'mailto:' +
+//                    objectToGetParams({
+//                        subject,
+//                        body: body || url
+//                    })
+//                PopupCenter(shareUrl, 'title', 500, 500)
+//
+//            }
+            emailLink(url, { subject, body }) {
+                window.open(
+                    'mailto:' +
                     objectToGetParams({
                         subject,
                         body: body || url
-                    })
-                PopupCenter(shareUrl, 'title', 500, 500)
-
+                    }),
+                    '_self'
+                );
             }
         },
         props: {
