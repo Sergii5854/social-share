@@ -25,7 +25,7 @@
                         subject,
                         body: body || url
                     })
-//                PopupCenter(shareUrl, 'title', 500, 500)
+                PopupCenter(shareUrl, 'title', 500, 500)
 
             }
         },
