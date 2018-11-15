@@ -1,3 +1,18 @@
-# share-link
-[Click me]( [Click me]( https://sergii5854.github.io/social-share/).
+# ShareLink
+
+key words: 
+```
+javascript, vue, share link, sahre social, 
+
+```
+
+Share Link with :
+
+```
+
+ Facebook
+ Email
+ Whatsapp
+```
+ [ CTA ]( https://share-links.netlify.com/ )
 
