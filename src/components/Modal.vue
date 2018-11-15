@@ -14,14 +14,14 @@
                 <div class="text-left">
                     <h1 class="title">Share</h1>
                     <div class="description">
-                        Check out this awesome listing on Airbnb: Visit Microbreweries from a Colorful Bungalow in North Park - Bungalows for Rent in San Diego
+                        Check out this awesome listing: Visit Microbreweries from a Colorful Bungalow in North Park - Bungalows for Rent in San Diego
                     </div>
                 </div>
                 <br>
                 <hr>
                 <div class="share-label-wrap text-left">
 
-                    <Facebook url="https://www.airbnb.com.mt/rooms/plus/20934793?"
+                    <Facebook url="https://share-links.netlify.com/"
                               name="Facebook"
                               scale="2"
                               />
@@ -30,7 +30,7 @@
 
                     <WhatsApp
                             name="WhatsApp"
-                            url="https://www.airbnb.com.mt/rooms/plus/20934793?"
+                            url="https://share-links.netlify.com/"
                             scale="2"/>
 
                     <hr>
@@ -39,7 +39,7 @@
                             name="Email"
                             title="test"
                             subject="Share Link "
-                            url="https://www.airbnb.com.mt/rooms/plus/20934793?"
+                            url="https://share-links.netlify.com/"
                             scale="2"/>
 
                     <br>
